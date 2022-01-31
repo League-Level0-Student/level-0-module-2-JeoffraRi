@@ -23,13 +23,18 @@ public class SafeCracker {
 	public static void main(String[] args) {
 		new SafeCracker().crackTheSafe();
 	}
-
+	String name = JOptionPane.showInputDialog("TYPE IN USERNAME.");
 	void crackTheSafe() {
 		/*
 		 * Your mission: use the tryCode method to crack the safe by trying all possible
 		 * combinations
-		 */		
-
+		 */
+		
+		int i = 9999999-100;
+		while(i<=9999999){
+		tryCode(i);
+		i++;
+		};
 	}
 
 	 void tryCode(int guess) {
@@ -38,8 +43,8 @@ public class SafeCracker {
 		int secretCode = 9999999 - wekncrzpasfdkjhcfjse;
 
 		if (guess == secretCode) {
-			JOptionPane.showMessageDialog(null, "Congratulations! You cracked the safe with " + guess);
 			playTheSoundOfSuccess();
+			JOptionPane.showMessageDialog(null, "AUTHORIZING... AUTHORIZED. HELLO, " + name);
 			System.exit(0);
 		}
 	}
@@ -48,7 +53,7 @@ public class SafeCracker {
 		
 		String path = "src/_02_methods/_2_safe_cracker/";
 		if (canPlaySounds) {	
-			File sound = new File(path+"me-gusta.wav");
+			File sound = new File(path+"safe_opening.wav");
 			if (sound.exists()) {
 				try {
 					Clip clip = AudioSystem.getClip();
