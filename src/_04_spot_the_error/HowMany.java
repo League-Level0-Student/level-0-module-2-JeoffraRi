@@ -10,12 +10,14 @@ public class HowMany {
 	
 	public static void main(String[] args) {
 		int number = 0;
-		System.out.println(number);
+		int test = getRandomNumber();
+		System.out.println(test);
 	}
 	
-	int getRandomNumber() {
+	static int getRandomNumber() {
 		Random random = new Random();
 		int number = random.nextInt(100)+1;
 		return number;
 	}
+	
 }
