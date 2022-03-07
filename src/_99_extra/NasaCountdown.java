@@ -21,6 +21,27 @@ public class NasaCountdown {
 			// 4. Use the speak method to hear the countdown.
 		
 			// 6. Use the following code to make the program wait one second for each number: Thread.sleep(1000);
+		System.out.println("T-minus 10");
+		Thread.sleep(1000);
+		System.out.println("T-minus 9");
+		Thread.sleep(1000);
+		System.out.println("T-minus 8");
+		Thread.sleep(1000);
+		System.out.println("T-minus 7");
+		Thread.sleep(1000);
+		System.out.println("T-minus 6");
+		Thread.sleep(1000);
+		System.out.println("T-minus 5");
+		Thread.sleep(1000);
+		System.out.println("T-minus 4");
+		Thread.sleep(1000);
+		System.out.println("T-minus 3");
+		Thread.sleep(1000);
+		System.out.println("T-minus 2");
+		Thread.sleep(1000);
+		System.out.println("T-minus 1");
+		Thread.sleep(1000);
+		System.out.println("*FRRRRRPPP*");                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 		
 		// 5. when the counting is done, speak "blastoff!"
 	}
